@@ -133,7 +133,7 @@ class DetailAnnonceViewController: BaseViewController {
             titleAnnonce.widthAnchor.constraint(equalTo: ViewDetails.widthAnchor, multiplier: 0.98),
             prixLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 4),
             prixLabel.topAnchor.constraint(equalTo: titleAnnonce.bottomAnchor, constant: 16),
-            prixLabel.heightAnchor.constraint(greaterThanOrEqualTo: titleAnnonce.heightAnchor, multiplier: 1),
+            prixLabel.heightAnchor.constraint(greaterThanOrEqualTo: prixLabel.heightAnchor, multiplier: 1),
             dateCreationLabl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 4),
             dateCreationLabl.topAnchor.constraint(equalTo: prixLabel.bottomAnchor, constant: 16),
             dateCreationLabl.heightAnchor.constraint(greaterThanOrEqualTo: dateCreationLabl.heightAnchor, multiplier: 1),

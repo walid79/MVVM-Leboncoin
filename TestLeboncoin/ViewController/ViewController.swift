@@ -9,11 +9,27 @@ import UIKit
 
 
 
-class ViewController: BaseViewController,Parseable {
-    let tableView = UITableView()
+class ViewController: BaseViewController {
+   
     var annonces : Annonce?
-    
-
+    let tableView : UITableView = {
+           let t = UITableView()
+           t.translatesAutoresizingMaskIntoConstraints = false
+           return t
+       }()
+    let viewSearch : UIView = {
+           let V = UIView()
+           V.translatesAutoresizingMaskIntoConstraints = false
+           return V
+       }()
+    let textFiledSearch : UITextField = {
+           let tx = UITextField()
+        tx.font = UIFont(name: "Avenir Next Condensed", size: 24)
+        tx.borderStyle = .roundedRect
+        tx.translatesAutoresizingMaskIntoConstraints = false
+        tx.placeholder = "Categorie"
+           return tx
+       }()
     var selectedAnnonce : String?
     var listeAnnonces = [AnnonceElement]()
     let ViewModelcat = CategorieListViewModel()
@@ -22,29 +38,30 @@ class ViewController: BaseViewController,Parseable {
     private let searchController = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchControllerSettings()
+       
+        view.addSubview(viewSearch)
         view.addSubview(tableView)
-        
+        viewSearch.addSubview(textFiledSearch)
+        constraintInit()
        tableView.backgroundColor = UIColor(red: 0.13, green: 0.15, blue: 0.18, alpha: 1.00)
         
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        tableView.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.register(AnnonceTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.backgroundColor = UIColor(red: 0.24, green: 0.24, blue: 0.27, alpha: 1.00)
-        //activityView.center = self.view.center
-       // self.view.addSubview(activityView)
+        tableView.register(AnnonceTableViewCell.self, forCellReuseIdentifier: "cell")
+        
+       
         tableView.separatorColor = UIColor(red: 0.13, green: 0.15, blue: 0.18, alpha: 1.00)
        
        setUpNavigation()
         closureSetup()
         getAnnoncesList()
-        
+        let pikerView = UIPickerView()
+        pikerView.delegate = self
+        pikerView.backgroundColor = UIColor(red: 0.24, green: 0.24, blue: 0.27, alpha: 1.00)
+        textFiledSearch.inputView = pikerView
+        dismissPickerView()
+        self.textFiledSearch.delegate = self
+        ViewModelcat.getCategorieListData()
     }
     
     private func getAnnoncesList(){
@@ -58,13 +75,31 @@ class ViewController: BaseViewController,Parseable {
             ViewModel.getAnnonceListData()
 
        
-        ViewModelcat.getCategorieListData()
+        
     }
    
-   
+    func constraintInit(){
+        NSLayoutConstraint.activate([
+            viewSearch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            viewSearch.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            viewSearch.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            viewSearch.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1),
+            tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+            tableView.topAnchor.constraint(equalTo: viewSearch.bottomAnchor, constant: 0),
+            tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            textFiledSearch.widthAnchor.constraint(equalTo: viewSearch.widthAnchor, multiplier:0.8),
+            textFiledSearch.heightAnchor.constraint(equalTo: viewSearch.heightAnchor, multiplier: 0.5),
+            //textFiledSearch.topAnchor.constraint(equalTo: viewSearch.safeAreaLayoutGuide.topAnchor, constant: 0),
+            //textFiledSearch.leadingAnchor.constraint(equalTo: viewSearch.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            textFiledSearch.centerXAnchor.constraint(equalTo: viewSearch.centerXAnchor),
+            textFiledSearch.centerYAnchor.constraint(equalTo: viewSearch.centerYAnchor)
+        
+        ])
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
+        //tableView.frame = view.bounds
     }
  
     private func tableViewReload() {
@@ -115,7 +150,11 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-  
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+            textFiledSearch.resignFirstResponder()//self.searchBar?.endEditing(true)
+        textFiledSearch.text = ""
+        textFiledSearch.placeholder = "Categorie"
+        }
     
     
 }
@@ -159,7 +198,7 @@ extension ViewController {
 
 
 
-extension ViewController: UISearchBarDelegate , UIPickerViewDelegate,UIPickerViewDataSource {
+extension ViewController:  UIPickerViewDelegate,UIPickerViewDataSource {
    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1 // number of session
@@ -174,56 +213,39 @@ extension ViewController: UISearchBarDelegate , UIPickerViewDelegate,UIPickerVie
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let categorie = ViewModelcat.Categorie(at: row)
         selectedAnnonce = categorie?.name // selected item
-        searchController.searchBar.text = selectedAnnonce
+        textFiledSearch.text = selectedAnnonce
     }
-    
+  
     
 
-    private func searchControllerSettings() {
-        definesPresentationContext = true
-        searchController.searchBar.delegate = self
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.sizeToFit()
-        navigationItem.searchController = searchController
-        let pikerView = UIPickerView()
-        pikerView.delegate = self
-        searchController.searchBar.keyboardAppearance = .alert
-        searchController.searchBar.inputAccessoryView = pikerView
-        //searchController.searchBar.searchTextField.textColor = UIColor(red: 0.50, green: 0.50, blue: 0.51, alpha: 1.00)
-        pikerView.backgroundColor = UIColor(red: 0.13, green: 0.15, blue: 0.18, alpha: 1.00)
-        searchController.searchBar.placeholder = "Catégorie"
-        
-    }
+  
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if let searchText = searchBar.text, !searchText.isEmpty {
-          
-           let idCategorie = ViewModelcat.idOfCategorie(searchText)
-            
-            ViewModel.search(idcat: idCategorie)
-            tableViewReload()
-           
-        }
-        
-    }
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchBar.text = selectedAnnonce
-        getAnnoncesList()
-        tableViewReload()
-    }
+   
    
     func dismissPickerView() {
        let toolBar = UIToolbar()
        toolBar.sizeToFit()
-       let button = UIBarButtonItem(title: "done", style: .plain, target: self, action: #selector(self.action))
+       let button = UIBarButtonItem(title: "Rechercher", style: .done, target: self, action: #selector(self.action))
+       
+        
        toolBar.setItems([button], animated: true)
        toolBar.isUserInteractionEnabled = true
-        searchController.searchBar.inputAccessoryView = toolBar
+        textFiledSearch.inputAccessoryView = toolBar
+        
     }
     @objc func action() {
+        let idCategorie = ViewModelcat.idOfCategorie(textFiledSearch.text ?? "")
+         
+         ViewModel.search(idcat: idCategorie)
+         tableViewReload()
           view.endEditing(true)
+        
+    }
+}
+extension ViewController : UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textFiledSearch.text = selectedAnnonce
+        getAnnoncesList()
+        tableViewReload()
     }
 }

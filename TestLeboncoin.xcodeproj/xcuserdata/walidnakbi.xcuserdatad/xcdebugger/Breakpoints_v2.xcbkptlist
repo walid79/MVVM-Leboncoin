@@ -55,16 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2372533B-AE80-4E7B-A491-17C61973AB53"
+            uuid = "1A37730E-3F28-4218-B7F4-EAB7EE155E98"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestLeboncoin/ViewModel/AnnocesListViewModel.swift"
+            filePath = "TestLeboncoin/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "search(idcat:)"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "dismissPickerView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
