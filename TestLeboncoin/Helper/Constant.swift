@@ -6,3 +6,6 @@
 //
 
 import Foundation
+struct CommonConstant {
+    static let appName = "Annonces"
+}

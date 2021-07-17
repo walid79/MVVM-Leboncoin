@@ -6,3 +6,6 @@
 //
 
 import Foundation
+class ListAnnonce:Codable{
+    let movieLists : [AnnonceElement]?
+}

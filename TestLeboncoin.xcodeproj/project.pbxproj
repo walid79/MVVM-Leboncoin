@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445CCEC726A1887F005F74C0 /* TestLeboncoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */; };
+		44F5BFAE269F7904000EE5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFAD269F7904000EE5BE /* AppDelegate.swift */; };
+		44F5BFB0269F7904000EE5BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFAF269F7904000EE5BE /* SceneDelegate.swift */; };
+		44F5BFB2269F7904000EE5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFB1269F7904000EE5BE /* ViewController.swift */; };
+		44F5BFB7269F7907000EE5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F5BFB6269F7907000EE5BE /* Assets.xcassets */; };
+		44F5BFBA269F7907000EE5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5BFB8269F7907000EE5BE /* LaunchScreen.storyboard */; };
+		44F5BFC4269F7EEC000EE5BE /* AnnonceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFC3269F7EEC000EE5BE /* AnnonceTableViewCell.swift */; };
+		44F5BFC6269F814B000EE5BE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFC5269F814B000EE5BE /* Extension.swift */; };
+		44F5BFCB269F87B2000EE5BE /* Annonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFCA269F87B2000EE5BE /* Annonce.swift */; };
+		44F5BFCE269F97C1000EE5BE /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFCD269F97C1000EE5BE /* RestApiManager.swift */; };
+		44F5BFD1269F9DF6000EE5BE /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFD0269F9DF6000EE5BE /* ErrorResult.swift */; };
+		44F5BFD4269F9E5E000EE5BE /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFD3269F9E5E000EE5BE /* ParserHelper.swift */; };
+		44F5BFD926A03A6E000EE5BE /* AnnocesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFD826A03A6E000EE5BE /* AnnocesListViewModel.swift */; };
+		44F5BFDC26A03B1E000EE5BE /* AnnonceListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFDB26A03B1E000EE5BE /* AnnonceListService.swift */; };
+		44F5BFDE26A041C5000EE5BE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFDD26A041C5000EE5BE /* BaseViewController.swift */; };
+		44F5BFE026A041F1000EE5BE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFDF26A041F1000EE5BE /* Constant.swift */; };
+		44F5BFE226A0506B000EE5BE /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFE126A0506B000EE5BE /* Categorie.swift */; };
+		44F5BFE426A050D8000EE5BE /* CategorieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFE326A050D8000EE5BE /* CategorieListService.swift */; };
+		44F5BFE626A051C5000EE5BE /* CategorieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFE526A051C5000EE5BE /* CategorieListViewModel.swift */; };
+		44F5BFE826A0714B000EE5BE /* UiimageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFE726A0714A000EE5BE /* UiimageViewExtension.swift */; };
+		44F5BFEB26A0ECB1000EE5BE /* DetailAnnonceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFEA26A0ECB1000EE5BE /* DetailAnnonceViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		445CCEC926A1887F005F74C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F5BFA2269F7904000EE5BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F5BFA9269F7904000EE5BE;
+			remoteInfo = TestLeboncoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		445CCEC426A1887F005F74C0 /* TestLeboncoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLeboncoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLeboncoinTests.swift; sourceTree = "<group>"; };
+		445CCEC826A1887F005F74C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F5BFAA269F7904000EE5BE /* TestLeboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLeboncoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F5BFAD269F7904000EE5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44F5BFAF269F7904000EE5BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44F5BFB1269F7904000EE5BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44F5BFB6269F7907000EE5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F5BFB9269F7907000EE5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44F5BFBB269F7907000EE5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F5BFC3269F7EEC000EE5BE /* AnnonceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnonceTableViewCell.swift; sourceTree = "<group>"; };
+		44F5BFC5269F814B000EE5BE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		44F5BFCA269F87B2000EE5BE /* Annonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annonce.swift; sourceTree = "<group>"; };
+		44F5BFCD269F97C1000EE5BE /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		44F5BFD0269F9DF6000EE5BE /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		44F5BFD3269F9E5E000EE5BE /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		44F5BFD826A03A6E000EE5BE /* AnnocesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnocesListViewModel.swift; sourceTree = "<group>"; };
+		44F5BFDB26A03B1E000EE5BE /* AnnonceListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnonceListService.swift; sourceTree = "<group>"; };
+		44F5BFDD26A041C5000EE5BE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		44F5BFDF26A041F1000EE5BE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		44F5BFE126A0506B000EE5BE /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
+		44F5BFE326A050D8000EE5BE /* CategorieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieListService.swift; sourceTree = "<group>"; };
+		44F5BFE526A051C5000EE5BE /* CategorieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieListViewModel.swift; sourceTree = "<group>"; };
+		44F5BFE726A0714A000EE5BE /* UiimageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageViewExtension.swift; sourceTree = "<group>"; };
+		44F5BFEA26A0ECB1000EE5BE /* DetailAnnonceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnnonceViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445CCEC126A1887F005F74C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F5BFA7269F7904000EE5BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445CCEC526A1887F005F74C0 /* TestLeboncoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */,
+				445CCEC826A1887F005F74C0 /* Info.plist */,
+			);
+			path = TestLeboncoinTests;
+			sourceTree = "<group>";
+		};
+		44F5BFA1269F7904000EE5BE = {
+			isa = PBXGroup;
+			children = (
+				44F5BFAC269F7904000EE5BE /* TestLeboncoin */,
+				445CCEC526A1887F005F74C0 /* TestLeboncoinTests */,
+				44F5BFAB269F7904000EE5BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44F5BFAB269F7904000EE5BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFAA269F7904000EE5BE /* TestLeboncoin.app */,
+				445CCEC426A1887F005F74C0 /* TestLeboncoinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F5BFAC269F7904000EE5BE /* TestLeboncoin */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFE926A0EC3E000EE5BE /* ViewController */,
+				44F5BFD726A03A4B000EE5BE /* ViewModel */,
+				44F5BFCC269F916C000EE5BE /* Network */,
+				44F5BFC9269F87A2000EE5BE /* Model */,
+				44F5BFC8269F8635000EE5BE /* Helper */,
+				44F5BFC7269F8616000EE5BE /* Cell */,
+				44F5BFAD269F7904000EE5BE /* AppDelegate.swift */,
+				44F5BFAF269F7904000EE5BE /* SceneDelegate.swift */,
+				44F5BFB6269F7907000EE5BE /* Assets.xcassets */,
+				44F5BFB8269F7907000EE5BE /* LaunchScreen.storyboard */,
+				44F5BFBB269F7907000EE5BE /* Info.plist */,
+			);
+			path = TestLeboncoin;
+			sourceTree = "<group>";
+		};
+		44F5BFC7269F8616000EE5BE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFC3269F7EEC000EE5BE /* AnnonceTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		44F5BFC8269F8635000EE5BE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFC5269F814B000EE5BE /* Extension.swift */,
+				44F5BFDD26A041C5000EE5BE /* BaseViewController.swift */,
+				44F5BFDF26A041F1000EE5BE /* Constant.swift */,
+				44F5BFE726A0714A000EE5BE /* UiimageViewExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		44F5BFC9269F87A2000EE5BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFCA269F87B2000EE5BE /* Annonce.swift */,
+				44F5BFE126A0506B000EE5BE /* Categorie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44F5BFCC269F916C000EE5BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFDA26A03AFF000EE5BE /* Service */,
+				44F5BFD2269F9E27000EE5BE /* Parser */,
+				44F5BFCF269F9DD5000EE5BE /* Error */,
+				44F5BFCD269F97C1000EE5BE /* RestApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		44F5BFCF269F9DD5000EE5BE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFD0269F9DF6000EE5BE /* ErrorResult.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		44F5BFD2269F9E27000EE5BE /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFD3269F9E5E000EE5BE /* ParserHelper.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		44F5BFD726A03A4B000EE5BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFD826A03A6E000EE5BE /* AnnocesListViewModel.swift */,
+				44F5BFE526A051C5000EE5BE /* CategorieListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44F5BFDA26A03AFF000EE5BE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFDB26A03B1E000EE5BE /* AnnonceListService.swift */,
+				44F5BFE326A050D8000EE5BE /* CategorieListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		44F5BFE926A0EC3E000EE5BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44F5BFB1269F7904000EE5BE /* ViewController.swift */,
+				44F5BFEA26A0ECB1000EE5BE /* DetailAnnonceViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		445CCEC326A1887F005F74C0 /* TestLeboncoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445CCECD26A1887F005F74C0 /* Build configuration list for PBXNativeTarget "TestLeboncoinTests" */;
+			buildPhases = (
+				445CCEC026A1887F005F74C0 /* Sources */,
+				445CCEC126A1887F005F74C0 /* Frameworks */,
+				445CCEC226A1887F005F74C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445CCECA26A1887F005F74C0 /* PBXTargetDependency */,
+			);
+			name = TestLeboncoinTests;
+			productName = TestLeboncoinTests;
+			productReference = 445CCEC426A1887F005F74C0 /* TestLeboncoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44F5BFA9269F7904000EE5BE /* TestLeboncoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F5BFBE269F7907000EE5BE /* Build configuration list for PBXNativeTarget "TestLeboncoin" */;
+			buildPhases = (
+				44F5BFA6269F7904000EE5BE /* Sources */,
+				44F5BFA7269F7904000EE5BE /* Frameworks */,
+				44F5BFA8269F7904000EE5BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestLeboncoin;
+			productName = TestLeboncoin;
+			productReference = 44F5BFAA269F7904000EE5BE /* TestLeboncoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F5BFA2269F7904000EE5BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					445CCEC326A1887F005F74C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 44F5BFA9269F7904000EE5BE;
+					};
+					44F5BFA9269F7904000EE5BE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 44F5BFA5269F7904000EE5BE /* Build configuration list for PBXProject "TestLeboncoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F5BFA1269F7904000EE5BE;
+			productRefGroup = 44F5BFAB269F7904000EE5BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F5BFA9269F7904000EE5BE /* TestLeboncoin */,
+				445CCEC326A1887F005F74C0 /* TestLeboncoinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445CCEC226A1887F005F74C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F5BFA8269F7904000EE5BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F5BFBA269F7907000EE5BE /* LaunchScreen.storyboard in Resources */,
+				44F5BFB7269F7907000EE5BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445CCEC026A1887F005F74C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445CCEC726A1887F005F74C0 /* TestLeboncoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F5BFA6269F7904000EE5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F5BFE626A051C5000EE5BE /* CategorieListViewModel.swift in Sources */,
+				44F5BFEB26A0ECB1000EE5BE /* DetailAnnonceViewController.swift in Sources */,
+				44F5BFDE26A041C5000EE5BE /* BaseViewController.swift in Sources */,
+				44F5BFCB269F87B2000EE5BE /* Annonce.swift in Sources */,
+				44F5BFB2269F7904000EE5BE /* ViewController.swift in Sources */,
+				44F5BFDC26A03B1E000EE5BE /* AnnonceListService.swift in Sources */,
+				44F5BFD4269F9E5E000EE5BE /* ParserHelper.swift in Sources */,
+				44F5BFE426A050D8000EE5BE /* CategorieListService.swift in Sources */,
+				44F5BFAE269F7904000EE5BE /* AppDelegate.swift in Sources */,
+				44F5BFE226A0506B000EE5BE /* Categorie.swift in Sources */,
+				44F5BFC4269F7EEC000EE5BE /* AnnonceTableViewCell.swift in Sources */,
+				44F5BFE026A041F1000EE5BE /* Constant.swift in Sources */,
+				44F5BFC6269F814B000EE5BE /* Extension.swift in Sources */,
+				44F5BFD1269F9DF6000EE5BE /* ErrorResult.swift in Sources */,
+				44F5BFD926A03A6E000EE5BE /* AnnocesListViewModel.swift in Sources */,
+				44F5BFE826A0714B000EE5BE /* UiimageViewExtension.swift in Sources */,
+				44F5BFCE269F97C1000EE5BE /* RestApiManager.swift in Sources */,
+				44F5BFB0269F7904000EE5BE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		445CCECA26A1887F005F74C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F5BFA9269F7904000EE5BE /* TestLeboncoin */;
+			targetProxy = 445CCEC926A1887F005F74C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44F5BFB8269F7907000EE5BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F5BFB9269F7907000EE5BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		445CCECB26A1887F005F74C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TK8WJTN3C;
+				INFOPLIST_FILE = TestLeboncoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Leboncoin.TestLeboncoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestLeboncoin.app/TestLeboncoin";
+			};
+			name = Debug;
+		};
+		445CCECC26A1887F005F74C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TK8WJTN3C;
+				INFOPLIST_FILE = TestLeboncoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Leboncoin.TestLeboncoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestLeboncoin.app/TestLeboncoin";
+			};
+			name = Release;
+		};
+		44F5BFBC269F7907000EE5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44F5BFBD269F7907000EE5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F5BFBF269F7907000EE5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TK8WJTN3C;
+				INFOPLIST_FILE = TestLeboncoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Leboncoin.TestLeboncoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44F5BFC0269F7907000EE5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TK8WJTN3C;
+				INFOPLIST_FILE = TestLeboncoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Leboncoin.TestLeboncoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445CCECD26A1887F005F74C0 /* Build configuration list for PBXNativeTarget "TestLeboncoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445CCECB26A1887F005F74C0 /* Debug */,
+				445CCECC26A1887F005F74C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F5BFA5269F7904000EE5BE /* Build configuration list for PBXProject "TestLeboncoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F5BFBC269F7907000EE5BE /* Debug */,
+				44F5BFBD269F7907000EE5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F5BFBE269F7907000EE5BE /* Build configuration list for PBXNativeTarget "TestLeboncoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F5BFBF269F7907000EE5BE /* Debug */,
+				44F5BFC0269F7907000EE5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F5BFA2269F7904000EE5BE /* Project object */;
+}
