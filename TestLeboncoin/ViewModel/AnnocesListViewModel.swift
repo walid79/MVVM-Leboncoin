@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 final class AnnoncesListViewModel {
     weak var service : AnnonceListProtocol?
     var annonces : Annonce?

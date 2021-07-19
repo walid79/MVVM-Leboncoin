@@ -8,17 +8,22 @@
 import XCTest
 @testable import TestLeboncoin
 class TestLeboncoinTests: XCTestCase {
-
-    func testResponseRequest(){
-        var stat = Int()
-        let requestModel = RequestModel(url: RestApiManager.baseUrl + RestApiManager.WS_Action.LIST_ANNONCES)
-        RestApiManager.sharedInstance.sendRequestWithJsonResponse(requestObject: requestModel){
-            (response) in
-            stat = response!.statusCode
-            XCTAssertEqual(stat, 200)
-        }
-        
-      
+    var viewModel : AnnoncesListViewModel!
+    var mockAnnonceService : MockAnnonceService?
+    override func setUp() {
+        viewModel = .init()
     }
-  
+    func testListAnnonce(){
+        mockAnnonceService?.fetchAnnonces(completion: { (result) in
+            switch result {
+            case .success(let annoceModel):
+                self.viewModel.onRefreshHandling?()
+            case .failure(let error):
+                print(error)
+                self.viewModel.onErrorHandling?(ErrorResult.network(string: error.localizedDescription))
+            }
+        })
+        viewModel.getAnnonceListData()
+        XCTAssertTrue((viewModel.onRefreshHandling != nil))
+    }
 }

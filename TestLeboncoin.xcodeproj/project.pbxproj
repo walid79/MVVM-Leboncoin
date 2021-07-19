@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		445CCEC726A1887F005F74C0 /* TestLeboncoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */; };
+		44C3796126A5E3B4004A1D7C /* MockAnnonceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C3796026A5E3B4004A1D7C /* MockAnnonceService.swift */; };
 		44F5BFAE269F7904000EE5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFAD269F7904000EE5BE /* AppDelegate.swift */; };
 		44F5BFB0269F7904000EE5BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFAF269F7904000EE5BE /* SceneDelegate.swift */; };
 		44F5BFB2269F7904000EE5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5BFB1269F7904000EE5BE /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		445CCEC426A1887F005F74C0 /* TestLeboncoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLeboncoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLeboncoinTests.swift; sourceTree = "<group>"; };
 		445CCEC826A1887F005F74C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C3796026A5E3B4004A1D7C /* MockAnnonceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnnonceService.swift; sourceTree = "<group>"; };
 		44F5BFAA269F7904000EE5BE /* TestLeboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLeboncoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5BFAD269F7904000EE5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F5BFAF269F7904000EE5BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				445CCEC626A1887F005F74C0 /* TestLeboncoinTests.swift */,
 				445CCEC826A1887F005F74C0 /* Info.plist */,
+				44C3796026A5E3B4004A1D7C /* MockAnnonceService.swift */,
 			);
 			path = TestLeboncoinTests;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C3796126A5E3B4004A1D7C /* MockAnnonceService.swift in Sources */,
 				445CCEC726A1887F005F74C0 /* TestLeboncoinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,8 +530,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TK8WJTN3C;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = TestLeboncoin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TK8WJTN3C;
 				INFOPLIST_FILE = TestLeboncoin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
